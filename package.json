@@ -1,0 +1,43 @@
+{
+  "name": "flatten-unflatten",
+  "version": "1.0.0",
+  "description": "Flatten or unflatten a object",
+  "source": "src/index.js",
+  "main": "dist/flatten-unflatten.js",
+  "browser": "dist/flatten-unflatten.umd.js",
+  "module": "dist/flatten-unflatten.m.js",
+  "repository": "https://github.com/tiaanduplessis",
+  "author": "Tiaan du Plessis",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "lint": "standard --fix",
+    "build": "microbundle"
+  },
+  "dependencies": {
+    "set-nested-prop": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.1.0",
+    "microbundle": "^0.4.4",
+    "standard": "^11.0.1"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "flatten",
+    "unflatten"
+  ],
+  "standard": {
+    "ignore": ["dist"],
+    "env": {
+      "jest": true
+    }
+  },
+  "babel": {
+    "presets": ["env"]
+  }
+}
